@@ -1,0 +1,132 @@
+.setting_title {
+    font-size: 15px !important;
+}
+
+.setting {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr min-content min-content min-content;
+    background: linear-gradient(45deg, #1f223d 0%, #1f223d 100%);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.setting h1 {
+    font-family: poppins_thin;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 4px 8px;
+    color: white;
+    opacity: 0.8;
+    user-select: none;
+}
+
+.setting .pr_input {
+    margin: 5px auto;
+    margin-right: 8px;
+}
+
+.updates_panel hr {
+    width: 94%;
+    border: 0;
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+
+.setting_tooltip {
+    font-size: 17px;
+    filter: invert(90%);
+    margin: auto 10px;
+    margin-left: auto;
+    opacity: 0.6;
+}
+
+.setting_switch {
+    margin: auto 0;
+    margin-left: auto;
+    transform: translateX(0px);
+    --width: 34px;
+    --height: 16px;
+    --thumb-size: 14px;
+}
+
+.setting_select {
+    margin: 5px auto;
+    margin-right: 8px;
+}
+
+.setting_select::part(label) {
+    font-size: 20px !important;
+}
+
+.pr_input[invalid]:not([disabled])::part(base) {      
+    border-color: rgba(255, 0, 0, 0.534);
+} 
+
+.pr_input[invalid] {
+    --focus-ring: 0 0 0 var(--sl-focus-ring-width) rgba(255, 0, 0, 0.562);
+}
+
+#query_tab {
+    height: 100%;
+}
+
+.query_symbol {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1.6fr;
+    margin-bottom: 12px;
+}
+
+.query_part {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.query_title, .query_stat, #query_coin, #query_daily {
+    font-family: poppins_light;
+    width: 100%;
+    color: white;
+    text-align: right;
+    font-size: 15px;
+    margin: 0px 4px;
+    opacity: 0.7
+}
+
+#query_coin {
+    font-weight: normal;
+    text-align: center;
+    font-size: 38px;
+    opacity: 1;
+}
+
+#query_daily {
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+    opacity: 1
+}
+
+.query_stat {
+    font-size: 16px;
+    opacity: 1;
+    color: #00b7ff;
+    font-family: poppins_regular;
+}
+
+.query_binance {
+    transform: translateX(10px);
+}
+
+.query_binance::part(base) {
+    background: linear-gradient(313deg, #3b549b 0%, #484394 100%);
+}
+
+.query_binance:active {
+    filter: hue-rotate(290deg)
+}
+
+#parameters_tab, #query_tab { 
+    display: none;
+}

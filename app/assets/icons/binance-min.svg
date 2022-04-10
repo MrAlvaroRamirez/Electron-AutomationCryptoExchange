@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="2551px" height="2550px" viewbox="0 0 2551 2550" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L2500.01 0L2500.01 2500L0 2500L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="binance-logo" transform="translate(25 25)">
+    <path d="M0 0L2500.01 0L2500.01 2500L0 2500L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <g id="Layer_2" transform="translate(61.00525 61.000244)">
+        <g id="Layer_1-2">
+          <path d="M721.975 992.111L1180.5 533.586L1639.24 992.309L1906.04 725.516L1180.5 0L455.201 725.299L721.984 992.092M0 1180.5L266.802 913.66L533.586 1180.44L266.784 1447.25L0 1180.5ZM721.975 1368.92L1180.5 1827.41L1639.23 1368.7L1906.17 1635.35L1906.04 1635.49L1180.5 2361L455.201 1635.7L454.823 1635.32L722.003 1368.89M1827.41 1180.61L2094.22 913.811L2361 1180.59L2094.21 1447.4L1827.41 1180.61Z" transform="scale(0.99999994 0.99999994)" id="Shape" fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="50" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M541.453 270.722L541.566 270.722L270.863 0L70.7734 200.033L70.7734 200.033L47.7867 223.029L0.377783 270.448L0 270.816L0.377783 271.203L270.863 541.727L541.585 271.005L541.717 270.854L541.472 270.722" transform="matrix(0.99999994 0 0 0.99999994 909.63654 909.63654)" id="Shape" fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="50" stroke-linejoin="round" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

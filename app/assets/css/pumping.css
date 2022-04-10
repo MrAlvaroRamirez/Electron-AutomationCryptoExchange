@@ -1,0 +1,80 @@
+.disabled_selector {
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+}
+
+#title_divider {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#coin_chart {
+    letter-spacing: 0.3px;
+    margin: auto 0px;
+}
+
+#pump_symbol {
+    font-family: poppins_thin;
+    font-weight: normal;
+    font-size: 36px;
+    margin: 0px;
+    color: white;
+    opacity: 0.8;
+    height: fit-content;
+    user-select: none;
+    line-height: 0;
+}
+
+#pump_price {
+    font-family: poppins_thin;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0px;
+    color: white;
+    opacity: 0.8;
+    user-select: none;
+    text-align: right;
+    flex-grow: 1;
+    line-height: 0;
+}
+
+.pump_stats {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #1a1d356c;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+.pump_stats p {
+    font-family: poppins_light;
+    color: white;
+    font-size: 12px;
+    opacity: 0.6;
+    text-align: right;
+    margin: 8px 8px;
+    letter-spacing: 1px;
+}
+
+.pump_value {
+    text-align: right;
+    flex-grow: 1;
+    font-size: 12px !important;
+    opacity: 1 !important;
+}
+
+.pump_sell_button::part(base) {
+    background: #e61545;
+}
+
+.pump_partial {
+    margin-bottom: 3px;
+    margin-right: 3px;
+    flex-grow: 1;
+}
+
+.pump_partial::part(base)  {
+    height: 30px;
+    line-height: 30px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      
+          
+            <!--Exchange-->
+            <div style="grid-column: 1; grid-row: 1;">
+              <div style="display: inline-flex; flex-direction: row; width: 100%;">
+                <p class="text_setting">Exchange :</p>
+                <sl-tooltip>
+                  <div slot="content">The exchange where the pump will take place</div>
+                  <sl-icon class="input_tooltip" src="assets/icons/tooltip.svg"></sl-icon>
+                </sl-tooltip>
+              </div>
+              <sl-select placeholder="Select an exchange..." class="pr_selection" size="medium" id="pr_exchange">
+                <sl-menu-item value="binance">
+                  <sl-icon slot="prefix" src="assets/icons/binance-logo.svg"></sl-icon>
+                  Binance
+                </sl-menu-item>
+                <sl-menu-divider style="width: 70%; margin: auto;"></sl-menu-divider>
+                <sl-menu-item value="kucoin">
+                  <sl-icon slot="prefix" src="assets/icons/kucoin.svg"></sl-icon>
+                  Kucoin
+                </sl-menu-item>
+                <sl-menu-divider style="width: 70%; margin: auto;"></sl-menu-divider>
+                <sl-menu-item value="hotbit" disabled style="opacity: 0.4;">
+                  <sl-icon slot="prefix" src="assets/icons/hotbit.svg"></sl-icon>
+                  WIP...
+                </sl-menu-item>
+              </sl-select>
+            </div>
+            <!--Pair-->
+            <div style="grid-column: 1; grid-row: 2">
+              <div style="display: inline-flex; flex-direction: row; width: 100%;">
+                <p class="text_setting">Pair :</p>
+                <sl-tooltip>
+                  <div slot="content">The asset which will be traded in exchange of the pumepd coin</div>
+                  <sl-icon class="input_tooltip" src="assets/icons/tooltip.svg"></sl-icon>
+                </sl-tooltip>
+              </div>
+              <sl-select placeholder="Select a pair..." class="pr_selection" size="medium" id="pr_pair">
+                <sl-menu-item value="btc">
+                  <sl-icon slot="prefix" src="assets/icons/bitcoin.svg" style="font-size: 20px; filter: invert(90%);"></sl-icon>
+                  Bitcoin
+                </sl-menu-item>
+                <sl-menu-divider style="width: 70%; margin: auto;"></sl-menu-divider>
+                <sl-menu-item value="eth">
+                  <sl-icon slot="prefix" src="assets/icons/ethereum.svg" style="font-size: 20px; filter: invert(90%)"></sl-icon>
+                  Ethereum
+                </sl-menu-item>
+                <sl-menu-divider style="width: 70%; margin: auto;"></sl-menu-divider>
+                <sl-menu-item value="usdt">
+                  <sl-icon slot="prefix" src="assets/icons/tether.svg" style="font-size: 20px; filter: invert(90%)"></sl-icon>
+                  USDT
+                </sl-menu-item>
+              </sl-select>
+            </div>
+            <!--Balance-->
+            <div style="grid-column: 1; grid-row: 3">
+              <div style="display: inline-flex; flex-direction: row; width: 100%;">
+                <p class="text_setting">Amount :</p>
+                <sl-tooltip>
+                  <div slot="content">The amount of the quote asset (the one previously selected)
+                    that you want to use to buy the coin
+                  </div>
+                  <sl-icon class="input_tooltip" src="assets/icons/tooltip.svg"></sl-icon>
+                </sl-tooltip>
+              </div>
+              <sl-input placeholder="0" size="medium" onkeypress="return event.charCode >= 32 && event.charCode <= 57" class="pr_input" id="pr_amount">
+                <sl-icon id="amount_icon" style="font-size: 20px; filter: invert(90%)" slot="prefix" src=""></sl-icon>
+                <p slot="suffix" id="max_balance">MAX</p>
+              </sl-input>
+            </div>
+            <!--Date-->
+            <div style="grid-column: 2; grid-row: 1">
+              <div style="display: inline-flex; flex-direction: row; width: 100%;">
+                <p class="text_setting">Date :</p>
+                <sl-tooltip>
+                  <div slot="content">The date when the pump will take place (Day / Month)</div>
+                  <sl-icon class="input_tooltip" src="assets/icons/tooltip.svg"></sl-icon>
+                </sl-tooltip>
+              </div>
+              <sl-input size="medium" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="pr_input" id="pr_date" maxlength="7">
+                <sl-icon style="font-size: 20px; filter: invert(90%)" slot="prefix" src="assets/icons/calendar.svg"></sl-icon>
+              </sl-input>
+            </div>
+            <!--Time-->
+            <div style="grid-column: 2; grid-row: 2">
+              <div style="display: inline-flex; flex-direction: row; width: 100%;">
+                <p class="text_setting">Time :</p>
+                <sl-tooltip>
+                  <div slot="content">The time when the pump will take place (Hour / Minute)</div>
+                  <sl-icon class="input_tooltip" src="assets/icons/tooltip.svg"></sl-icon>
+                </sl-tooltip>
+              </div>
+              <sl-input size="medium" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="pr_input" id="pr_time" maxlength="7">
+                <sl-icon style="font-size: 20px; filter: invert(90%)" slot="prefix" src="assets/icons/clock.svg"></sl-icon>
+                <p style="font-size: 10px; filter: invert(90%); font-weight: bold;" slot="suffix">UTC</p>
+              </sl-input>
+            </div>
+            <!--Detect Settings-->
+            <div style="grid-column: 3; grid-row: 1; grid-row-end: span 3; display: flex; flex-direction: column;">
+              <p class="text_setting" style="margin: 0px; text-align: right;">Detect Settings :</p>
+              <hr style="width: 80%; margin-right: 0px; border: 0;  border-top: 1px solid white; opacity: 0.5;">
+              <p class="stats" id="take_profit">Take Profit : </p>
+              <p class="stats" id="stop_loss_trigger">Stop Loss : </p>
+              <p class="stats" id="market_step">Market Step Size : </p>
+              <p class="stats" id="cancel_thres">Cancel trigger : </p>
+              <p class="stats" id="trailing_stop">Trailing Stop Loss : </p>
+              <p class="stats" id="detect_thres">Detect Sensivity : </p>
+              <p class="stats" id="cancel_time">Cancel Time : </p>
+            </div>
+            <!--Go-->
+            <div style="grid-column: 2; grid-row: 3; display: flex; flex-direction: column; margin-top: -25px;">
+              <sl-button class="pr_button" id="start_detect_button" pill>
+                <sl-icon style="font-size: 20px; filter: invert(90%);" slot="suffix" src="assets/icons/bolt.svg"></sl-icon>
+                Start Detecting
+              </sl-button>
+              <p class="text_setting" style="width: 100%; text-align: center; margin: 5px;">Status : Off</p>
+            </div>
+      
+
+    <script src="assets/js/detect.js"></script>
+  </body>
+</html>

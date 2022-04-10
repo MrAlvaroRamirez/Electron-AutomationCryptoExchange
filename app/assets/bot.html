@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="detect_container">
+      <header id="mode_selector">
+        <h1 onclick="ChangeBotPage('manual', this)" id="manual_button" class="panel_tab">Manual</h1>
+        <h1 onclick="ChangeBotPage('scrape', this)" id="scrape_button" class="panel_tab">Scrape</h1>
+        <h1 onclick="ChangeBotPage('detect', this)" id="detect_button" class="panel_tab">Detect</h1>
+        <h1 onclick="ChangeBotPage('split', this)" id="split_button" class="panel_tab">Split</h1>
+        <p class="pr_timer pr_timer_sign">UTC:</p>
+        <p class="pr_timer" id="panel_utc">12:50:12</p>
+        <p class="pr_timer pr_ms" id="panel_utc_ms">48</p>
+      </header>
+      <hr id="title_divider">
+      <div id="content_panel">
+        <div id="grid_container">
+
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/detect.js"></script>
+    
+  </body>
+</html>
