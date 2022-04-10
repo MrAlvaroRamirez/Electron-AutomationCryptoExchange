@@ -8,7 +8,7 @@ Software developed in JS using Electron, WebSockets and Binane API.
 - Realtime detection of on-going pumps of a currency
 - Automatic trading based on the pump detection
 - Adjustable via the settings
-- 
+
 | Screen     | Preview |
 | ---      | ---       |
 | Main Screen | <img src="https://github.com/MrAlvaroRamirez/CryptoPumpDetection/blob/main/preview/main.PNG" width=420 />|
